@@ -1,0 +1,1 @@
+ThreadFlip by Waz does not collect, store, or transmit any personal user data. All actions happen locally inside your Gmail tab. No emails, metadata, or user content is sent anywhere. No third-party tracking is included.
