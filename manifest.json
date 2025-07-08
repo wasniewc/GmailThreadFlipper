@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "ThreadFlip — Gmail Thread Reverser",
+  "description": "Flip Gmail threads so the newest messages show first. Made by Waz © 2025.",
+  "version": "2.0",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["https://mail.google.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon.png"
+    }
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
